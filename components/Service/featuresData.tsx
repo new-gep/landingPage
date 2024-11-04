@@ -27,21 +27,21 @@ const featuresData: Feature[] = [
     icon: "/images/icon/icon-04.svg",
     title: "Educação Corporativa",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Acreditamos que o sucesso de uma empresa começa com o desenvolvimento de sua equipe. Nossa abordagem em educação corporativa visa transformar talentos em agentes de inovação e crescimento, alinhando as competências dos colaboradores com as metas estratégicas da organizacionais.",
   },
   {
     id: 5,
     icon: "/images/icon/icon-05.svg",
     title: "Recrutamente e Seleção",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Sabemos que o sucesso de uma empresa depende de pessoas, nossa análise detalhada garante que os candidatos tenham as competências necessárias para a inovação e o crescimento organizacional.",
   },
   {
     id: 6,
     icon: "/images/icon/icon-06.svg",
     title: "Departamento Pessoal",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In convallis tortor.",
+      "Tornamos os processos de departamento pessoal mais ágeis e eficientes, através das soluções digitais. Tudo isso apoiado por uma comunicação intuitiva via app do colaborador e agentes de IA garantindo uma experiência fluida, transparecnte e segura.",
   },
 ];
 
