@@ -24,10 +24,10 @@ const Hero = () => {
                   Gestão de Pessoas
                 </span>
               </h1>
-              <p>  A New Gep é uma empresa brasileira inovadora que atua no setor de tecnologia, com foco em soluções 
-                estratégicas para a gestão de pessoas. 
-                Nossa missão é simplificar processos, otimizar resultados e transformar a forma como empresas gerenciam talentos, 
-                utilizando as melhores ferramentas tecnológicas disponíveis no mercado.
+              <p>  
+                A New Gep é uma empresa brasileira inovadora que atua no setor de tecnologia, 
+                com foco em soluções estratégicas para gestão de pessoas. Nossa missão é simplificar 
+                processos, otimizar resultados e através da transformação digital.
               </p>
 
               <div className="mt-10">
