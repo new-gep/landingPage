@@ -48,7 +48,7 @@ const Pricing = () => {
                 Pacote Mensal
               </h4>
               <p>O custo é de apenas R$25 mensais por colaborador.</p>
-              <p className="mt-2 text-xs text-primary">Acima de 10 colaboradores oferecemos novos valores</p>
+              <p className="mt-2 text-xs text-primary">Acima de 10 colaboradores <br/> temos melhores condições</p>
               <div className="mt-9 border-t border-stroke pt-9 dark:border-strokedark">
                 <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
                   Serviços
@@ -126,7 +126,7 @@ const Pricing = () => {
                 Pacote Trimestral
               </h4>
               <p>O custo é de apenas R$20 mensais por colaborador.</p>
-              <p className="mt-2 text-xs text-primary">Acima de 10 colaboradores oferecemos novos valores</p>
+              <p className="mt-2 text-xs text-primary">Acima de 10 colaboradores <br/> temos melhores condições</p>
               <div className="mt-9 border-t border-stroke pt-9 dark:border-strokedark">
                 <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
                   Serviços
@@ -200,7 +200,7 @@ const Pricing = () => {
                 Pacote Anual
               </h4>
               <p>O custo é de apenas R$15 mensais por colaborador.</p>
-              <p className="mt-2 text-xs text-primary">Acima de 10 colaboradores oferecemos novos valores</p>
+              <p className="mt-2 text-xs text-primary">Acima de 10 colaboradores <br/> temos melhores condições</p>
               <div className="mt-9 border-t border-stroke pt-9 dark:border-strokedark">
                 <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
                   Serviços
@@ -302,7 +302,7 @@ const Pricing = () => {
                 Pacote Mensal
               </h4>
               <p>O custo é de apenas R$20 mensais por colaborador.</p>
-              <p className="mt-2 text-xs text-primary">Acima de 10 colaboradores oferecemos novos valores</p>
+              <p className="mt-2 text-xs text-primary">Acima de 10 colaboradores <br/> temos melhores condições</p>
 
               <div className="mt-9 border-t border-stroke pt-9 dark:border-strokedark">
                 <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
@@ -381,7 +381,7 @@ const Pricing = () => {
                 Pacote Trimestral
               </h4>
               <p>O custo é de apenas R$16 mensais por colaborador.</p>
-              <p className="mt-2 text-xs text-primary">Acima de 10 colaboradores oferecemos novos valores</p>
+              <p className="mt-2 text-xs text-primary">Acima de 10 colaboradores <br/> temos melhores condições</p>
               <div className="mt-9 border-t border-stroke pt-9 dark:border-strokedark">
                 <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
                   Serviços
@@ -455,7 +455,7 @@ const Pricing = () => {
                 Pacote Anual
               </h4>
               <p>O custo é de apenas R$13 mensais por colaborador.</p>
-              <p className="mt-2 text-xs text-primary">Acima de 10 colaboradores oferecemos novos valores</p>
+              <p className="mt-2 text-xs text-primary">Acima de 10 colaboradores <br/> temos melhores condições</p>
               <div className="mt-9 border-t border-stroke pt-9 dark:border-strokedark">
                 <h4 className="mb-2.5 text-para2 font-medium text-black dark:text-white">
                   Serviços
