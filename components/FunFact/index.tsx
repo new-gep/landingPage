@@ -58,7 +58,7 @@ const FunFact = () => {
             <h2 className="mb-4 text-3xl font-bold text-black dark:text-primary xl:text-sectiontitle3">
               Confiado por Empresas de Todo Mundo
             </h2>
-            <p className="mx-auto lg:w-11/12">
+            <p className="mx-auto lg:w-11/12 text-justify">
             Nossa plataforma é escolhida por diversas empresas 
             renomadas que buscam simplificar a gestão de pessoas 
             e otimizar seus processos. Estamos comprometidos em 
