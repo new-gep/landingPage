@@ -35,7 +35,7 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
         <h5 className="mb-5 text-primary">
           {subtitle}
         </h5>
-        <p>{description}</p>
+        <p className="text-justify">{description}</p>
       </motion.div>
     </>
   );
