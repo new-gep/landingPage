@@ -2,6 +2,12 @@
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
 
+const messageClient = "Olá! Gostaria de saber mais sobre o plano Client.";
+const whatsappClientLink = `https://wa.me/5511984051096?text=${encodeURIComponent(messageClient)}`;
+
+const messageCompany = "Olá! Gostaria de saber mais sobre o plano Client.";
+const whatsappCompanyLink = `https://wa.me/5511984051096?text=${encodeURIComponent(messageCompany)}`;
+
 const Pricing = () => {
   return (
     <>
@@ -93,9 +99,9 @@ const Pricing = () => {
                 aria-label="Get the Plan button"
                 className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
               >
-                <span className="duration-300 group-hover/btn:pr-2">
+                <a href={whatsappClientLink} className="duration-300 group-hover/btn:pr-2">
                   Obter o Plano
-                </span>
+                </a>
                 <svg
                   width="14"
                   height="14"
@@ -171,9 +177,9 @@ const Pricing = () => {
                 aria-label="Get the Plan button"
                 className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
               >
-                <span className="duration-300 group-hover/btn:pr-2">
+                <a href={whatsappClientLink} className="duration-300 group-hover/btn:pr-2">
                   Obter o Plano
-                </span>
+                </a>
                 <svg
                   width="14"
                   height="14"
@@ -245,9 +251,9 @@ const Pricing = () => {
                 aria-label="Get the Plan button"
                 className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
               >
-                <span className="duration-300 group-hover/btn:pr-2">
+                <a href={whatsappClientLink} className="duration-300 group-hover/btn:pr-2">
                   Obter o Plano
-                </span>
+                </a>
                 <svg
                   width="14"
                   height="14"
@@ -348,9 +354,9 @@ const Pricing = () => {
                 aria-label="Get the Plan button"
                 className="group/btn inline-flex items-center gap-2.5 font-medium text-primary transition-all duration-300 dark:text-white dark:hover:text-primary"
               >
-                <span className="duration-300 group-hover/btn:pr-2">
+                <a href={whatsappCompanyLink} className="duration-300 group-hover/btn:pr-2">
                   Obter o Plano
-                </span>
+                </a>
                 <svg
                   width="14"
                   height="14"
