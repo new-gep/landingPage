@@ -31,9 +31,9 @@ const CTA = () => {
               <h2 className="mb-4 w-11/12 text-3xl font-bold text-black dark:text-primary xl:text-sectiontitle4">
                 Junte-se a Nós Hoje
               </h2>
-              <p>
-              Com funcionalidades que facilitam a gestão de tarefas, a comunicação e o acesso a dados, sua equipe se tornará mais eficiente e produtiva. 
-              Não perca mais tempo com processos manuais e burocráticos; 
+              <p className="text-justify">
+              Com soluções que facilitam a gestão de tarefas, a comunicação e o acesso das informações, sua equipe se tornará mais eficiente e produtiva. 
+              Não perca mais tempo com processos manuais e burocráticos,
               escolha a transformação digital e potencialize o desempenho 
               da sua empresa.
               </p>
