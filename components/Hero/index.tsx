@@ -24,11 +24,11 @@ const Hero = () => {
                   Soluções Digitais
                 </span>
               </h1>
-              <p>  
+              <p className="text-justify">  
                 A New Gep é Startup que atua no setor de tecnologia, com foco em 
                 soluções digitais para Gestão Estratégica de Pessoas. A Nossa 
                 missão é simplificar processos, otimizar resultados e transformar 
-                a forma como empresas fazem a gestão dos seus talentos.
+                a forma como as empresas fazem a gestão dos seus talentos.
               </p>
 
               <div className="mt-10">
