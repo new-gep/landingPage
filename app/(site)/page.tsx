@@ -15,7 +15,7 @@ import Testimonial from "@/components/Testimonial";
 
 export const metadata: Metadata = {
   title: "New Gep",
-  description: "Nova Gestão Digital",
+  description: "Soluções Digitais Gestão Estratégia de Pessoas",
   // other metadata
 };
 
