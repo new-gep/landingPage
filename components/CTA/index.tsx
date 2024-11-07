@@ -32,7 +32,7 @@ const CTA = () => {
                 Junte-se a Nós Hoje
               </h2>
               <p className="text-justify">
-              Com soluções que facilitam a gestão de tarefas, a comunicação e o acesso das informações, sua equipe se tornará mais eficiente e produtiva. 
+              Soluções que facilitam a gestão de tarefas, a comunicação e o acesso das informações, sua equipe se tornará mais eficiente e produtiva. 
               Não perca mais tempo com processos manuais e burocráticos,
               escolha a transformação digital e potencialize o desempenho 
               da sua empresa.
