@@ -140,8 +140,8 @@ const About = () => {
                 </span>
               </h2>
               <p>
-                Junte-se a nós e transforme a maneira como você gerencia sua equipe. 
-                Descubra como a tecnologia pode otimizar seus processos e criar um 
+                Junte-se a nós para transformação digital da sua empresa e 
+                descubra como a tecnologia pode otimizar e potencializar seus processos e criar um 
                 ambiente de trabalho mais organizado e colaborativo.
               </p>
               <div>
