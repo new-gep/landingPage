@@ -15,7 +15,7 @@ const Feature = () => {
             headerInfo={{
               title: "Serviços",
               subtitle: "Principais Serviços",
-              description: `Soluções tecnológicas em gestão de pessoas
+              description: `Soluções digitais em gestão estratégica de pessoas
                para otimizar recrutamento, desempenho e desenvolvimento de talentos.`,
             }}
           />

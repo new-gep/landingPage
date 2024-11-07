@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const SingleFeature = ({ feature }: { feature: Feature }) => {
-  const { icon, title, description } = feature;
+  const { icon, title, description, subtitle } = feature;
 
   return (
     <>
@@ -29,9 +29,12 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
         <div className="relative flex h-16 w-16 items-center justify-center rounded-[4px] bg-primary">
           <Image src={icon} width={36} height={36} alt="title" />
         </div>
-        <h3 className="mb-5 mt-7.5 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">
+        <h3 className="mt-7.5 text-xl font-semibold text-black dark:text-white xl:text-itemtitle">
           {title}
         </h3>
+        <h5 className="mb-5 text-primary">
+          {subtitle}
+        </h5>
         <p>{description}</p>
       </motion.div>
     </>

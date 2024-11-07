@@ -19,9 +19,9 @@ const Hero = () => {
                 🔥 New Gep - Nova Gestão Estratégica de Pessoas
               </h4>
               <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-primary xl:text-hero ">
-                  Soluções Tecnológicas {"   "}
+                  {/* Soluções Digitais{"   "} */}
                 <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-primary dark:before:bg-titlebgdark ">
-                  Gestão de Pessoas
+                  Soluções Digitais
                 </span>
               </h1>
               <p>  

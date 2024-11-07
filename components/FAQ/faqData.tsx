@@ -28,7 +28,7 @@ const faqData: FAQ[] = [
   },
   {
     id:6,
-    quest: "Como o DP digital facilita a gestão de pessoal?",
+    quest: "Como o DP digital facilita a gestão de pessoas?",
     ans:"Oferecemos uma solução completa e digital para a gestão de pessoal, incluindo processos de admissão e desligamento, distribuição de holerites, controle de ponto digital e envio de atestados, tudo de forma totalmente digitalizada e simplificada. Além disso, contamos com a opção de assinatura online, garantindo mais agilidade e eliminando burocracias no dia a dia do RH."
   }
 ];
