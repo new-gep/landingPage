@@ -25,7 +25,7 @@ const Hero = () => {
                 </span>
               </h1>
               <p className="text-justify">  
-                A New Gep é Startup que atua no setor de tecnologia, com foco em 
+                A New Gep é uma Startup que atua no setor de tecnologia, com foco em 
                 soluções digitais para Gestão Estratégica de Pessoas. A Nossa 
                 missão é simplificar processos, otimizar resultados e transformar 
                 a forma como as empresas fazem a gestão dos seus talentos.
@@ -51,7 +51,7 @@ const Hero = () => {
                 </form>
 
                 <p className="mt-5 text-black dark:text-white">
-                  Breve entramos em contato
+                  Em breve entramos em contato
                 </p>
               </div>
             </div>
