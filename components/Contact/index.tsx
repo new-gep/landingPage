@@ -182,7 +182,7 @@ const Contact = () => {
                 <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
                   Nossa Localização
                 </h3>
-                <p>Av. Dr. Gastão Vidigal 1132, AP 309 Bloco A, SP, São Paulo</p>
+                <p>Rua Tito 479, Primeiro Andar, SP, São Paulo</p>
               </div>
               <div className="5 mb-7">
                 <h3 className="mb-4 text-metatitle3 font-medium text-black dark:text-white">
@@ -197,7 +197,7 @@ const Contact = () => {
                   Celular
                 </h4>
                 <p>
-                  <a href="#">+55 (11) 9 8405-1096</a>
+                  <a href="#">+55 (11) 9 4789-3123</a>
                 </p>
               </div>
             </motion.div>
