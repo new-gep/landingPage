@@ -4,6 +4,17 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const CTA = () => {
+
+  const handleSubmit = () => {
+    
+    const message = `Olá, eu gostaria de conhecer um pouco mais.`;
+    const encodedMessage = encodeURIComponent(message);
+    const phoneNumber = "5511947893123";
+    const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+    window.open(whatsappLink, "_blank");
+  };
+
+
   return (
     <>
       {/* <!-- ===== CTA Start ===== --> */}
@@ -64,9 +75,9 @@ const CTA = () => {
                   alt="Saly"
                   className="hidden xl:block"
                 />
-                <a
-                  href="/auth/signup"
+                <button
                   className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white hover:opacity-90 dark:bg-white dark:text-black"
+                  onClick={handleSubmit}
                 >
                   Comece Agora
                   <Image
@@ -83,7 +94,7 @@ const CTA = () => {
                     alt="Arrow"
                     className="hidden dark:block"
                   />
-                </a>
+                </button>
               </div>
             </motion.div>
           </div>

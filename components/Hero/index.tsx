@@ -1,12 +1,24 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import * as Yup from "yup";
 
 const Hero = () => {
-  const [email, setEmail] = useState("");
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+
+  const validationSchema = Yup.object({
+    email: Yup.string()
+      .email("E-mail inválido")
+      .required("E-mail é obrigatório"),
+  });
+
+  const handleSubmit = (values: { email: string }) => {
+    const message = `Olá, eu gostaria de conhecer um pouco mais. Meu e-mail é ${values.email}`;
+    const encodedMessage = encodeURIComponent(message);
+    const phoneNumber = "5511947893123";
+
+    return `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
   };
 
   return (
@@ -32,7 +44,7 @@ const Hero = () => {
               </p>
 
               <div className="mt-10">
-                <form onSubmit={handleSubmit}>
+                {/* <form onSubmit={handleSubmit}>
                   <div className="flex flex-wrap gap-5">
                     <input
                       value={email}
@@ -48,7 +60,60 @@ const Hero = () => {
                       Conheça
                     </button>
                   </div>
-                </form>
+                </form> */}
+
+                <Formik
+                  initialValues={{
+                    email: "",
+                  }}
+                  validationSchema={validationSchema}
+                  onSubmit={(values, { setSubmitting, resetForm }) => {
+                    // Gera o link mailto: e abre em uma nova janela/aba
+                    const whatsappLink = handleSubmit(values);
+                    window.open(whatsappLink, "_blank");
+                   
+                    // Opcional: você pode limpar o formulário e definir um estado de sucesso/erro aqui
+                    resetForm();
+                    // setSubmitting(false);
+                  }}
+                >
+                  {({ isSubmitting }) => (
+                    <Form>
+                      <div className="flex flex-wrap gap-5">
+                        {/* <input
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                          type="text"
+                          placeholder="Adicione seu e-mail"
+                          className="rounded-full border border-stroke px-6 py-2.5 shadow-solid-2 focus:border-primary focus:outline-none dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
+                        /> */}
+                        <div className="flex flex-col">
+                          <Field
+                              type="text"
+                              name="email"
+                              placeholder="Adicione seu e-mail"
+                              className="rounded-full border border-stroke px-6 py-2.5 shadow-solid-2 focus:border-primary focus:outline-none dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
+                            />
+                            
+                            <ErrorMessage
+                              name="email"
+                              component="p"
+                              className="text-red-500 text-sm mt-1 ml-5"
+                            />
+                            
+                        </div>
+                        <button
+                          type="submit"
+                          disabled={isSubmitting}
+                          aria-label="get started button"
+                          className="flex text-center items-center justify-center rounded-full bg-black w-28 px-2 h-12 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
+                        >
+                          Conheça
+                        </button>
+                      </div>
+                    </Form>
+                  )}
+                </Formik>
 
                 <p className="mt-5 text-black dark:text-white">
                   Em breve entramos em contato

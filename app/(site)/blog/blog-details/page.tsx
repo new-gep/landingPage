@@ -1,21 +1,30 @@
+'use client'
+
 import RelatedPost from "@/components/Blog/RelatedPost";
 import SharePost from "@/components/Blog/SharePost";
-import { Metadata } from "next";
 import Image from "next/image";
+// import { Metadata  } from "next";
+import {  useSearchParams } from "next/navigation";
+import CardFull from "@/components/Blog/BlogCardFull";
 
-export const metadata: Metadata = {
-  title: "Blog Details Page - Solid SaaS Boilerplate",
-  description: "This is Blog details page for Solid Pro",
-  // other metadata
-};
 
-const SingleBlogPage = async () => {
+// export const metadata: Metadata = {
+//   title: "Blog Details Page - Solid SaaS Boilerplate",
+//   description: "This is Blog details page for Solid Pro",
+//   // other metadata
+// };
+
+const SingleBlogPage = () => {
+  const searchParams = useSearchParams();
+  const id = searchParams.get('id');
+  
   return (
     <>
       <section className="pb-20 pt-35 lg:pb-25 lg:pt-45 xl:pb-30 xl:pt-50">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex flex-col-reverse gap-7.5 lg:flex-row xl:gap-12.5">
-            <div className="md:w-1/2 lg:w-[32%]">
+            
+            {/* <div className="md:w-1/2 lg:w-[32%]">
               <div className="animate_top mb-10 rounded-md border border-stroke bg-white p-3.5 shadow-solid-13 dark:border-strokedark dark:bg-blacksection">
                 <form
                   action="https://formbold.com/s/unique_form_id"
@@ -72,10 +81,12 @@ const SingleBlogPage = async () => {
               </div>
 
               <RelatedPost />
-            </div>
+            </div> */}
 
-            <div className="lg:w-2/3">
+              <CardFull id={id}/>
+            {/* <div className="lg:w-3/3">
               <div className="animate_top rounded-md border border-stroke bg-white p-7.5 shadow-solid-13 dark:border-strokedark dark:bg-blacksection md:p-10">
+
                 <div className="mb-10 w-full overflow-hidden ">
                   <div className="relative aspect-[97/60] w-full sm:aspect-[97/44]">
                     <Image
@@ -88,46 +99,43 @@ const SingleBlogPage = async () => {
                 </div>
 
                 <h2 className="mb-5 mt-11 text-3xl font-semibold text-black dark:text-white 2xl:text-sectiontitle2">
-                  Kobe Steel plant that supplied
+                Vagas Afirmativas e Inclusivas: Um Caminho para a Transformação Social e Empresarial 
                 </h2>
 
                 <ul className="mb-9 flex flex-wrap gap-5 2xl:gap-7.5">
                   <li>
-                    <span className="text-black dark:text-white">Author: </span>{" "}
-                    Jhon Doe
+                    <span className="text-black dark:text-white">Autora: </span>{" "}
+                    Michelle Cunha
                   </li>
                   <li>
                     <span className="text-black dark:text-white">
-                      Published On: July 30, 2023
+                      Publicado em: Janeiro 20, 2025
                     </span>{" "}
                   </li>
                   <li>
                     <span className="text-black dark:text-white">
-                      Category:
+                      Categoria:
                     </span>
-                    Events
+                    Inclusão
                   </li>
                 </ul>
 
                 <div className="blog-details">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur
-                    leo. Ut venenatis rhoncus quam sed condimentum. Curabitur
-                    vel turpis in dolor volutpat imperdiet in ut mi. Integer non
-                    volutpat nulla. Nunc elementum elit viverra, tempus quam
-                    non, interdum ipsum.
+                  Em um mundo cada vez  mais conectado e diverso,
+                  as empresas têm a oportunidade e a responsabilidade
+                  de construir ambientes de trabalho que reflitam a
+                  pluralidade da sociedade. É nesse contexto que as vagas
+                  afirmativas e inclusivas ganham relevância estratégica e social.
                   </p>
 
                   <p>
-                    Aenean augue ex, condimentum vel metus vitae, aliquam porta
-                    elit. Quisque non metus ac orci mollis posuere. Mauris vel
-                    ipsum a diam interdum ultricies sed vitae neque. Nulla
-                    porttitor quam vitae pulvinar placerat. Nulla fringilla elit
-                    sit amet justo feugiat sodales. Morbi eleifend, enim non
-                    eleifend laoreet, odio libero lobortis lectus, non porttitor
-                    sem urna sit amet metus. In sollicitudin quam est,
-                    pellentesque consectetur felis fermentum vitae.
+                  Elas não apenas abrem portas para pessoas historicamente
+                  excluídas, mas também fortalecem a inovação e a
+                  competitividade das organizações. Vamos explorar
+                  a importância desse tema, como ele pode ser
+                  implementado e como símbolos representativos
+                  podem reforçar a comunicação.
                   </p>
 
                   <div className="flex flex-wrap gap-5">
@@ -161,7 +169,7 @@ const SingleBlogPage = async () => {
 
                 <SharePost />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
