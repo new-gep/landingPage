@@ -23,13 +23,13 @@ const BlogData: Blog[] = [
     metadata:
       "Casos de Sucesso.",
   },
-  {
-    _id: 4,
-    mainImage: "/images/blog/blog-03.png",
-    title: "Inspire-se e Participe da Mudança",
-    metadata:
-      "Inspire-se e Participe da Mudança",
-  },
+  // {
+  //   _id: 4,
+  //   mainImage: "/images/blog/blog-03.png",
+  //   title: "Inspire-se e Participe da Mudança",
+  //   metadata:
+  //     "Inspire-se e Participe da Mudança",
+  // },
 
   // {
   //   _id: 5,
