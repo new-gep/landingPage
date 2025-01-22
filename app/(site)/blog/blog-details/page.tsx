@@ -88,46 +88,43 @@ const SingleBlogPage = async () => {
                 </div>
 
                 <h2 className="mb-5 mt-11 text-3xl font-semibold text-black dark:text-white 2xl:text-sectiontitle2">
-                  Kobe Steel plant that supplied
+                Vagas Afirmativas e Inclusivas: Um Caminho para a Transformação Social e Empresarial 
                 </h2>
 
                 <ul className="mb-9 flex flex-wrap gap-5 2xl:gap-7.5">
                   <li>
-                    <span className="text-black dark:text-white">Author: </span>{" "}
-                    Jhon Doe
+                    <span className="text-black dark:text-white">Autora: </span>{" "}
+                    Michelle Cunha
                   </li>
                   <li>
                     <span className="text-black dark:text-white">
-                      Published On: July 30, 2023
+                      Publicado em: Janeiro 20, 2025
                     </span>{" "}
                   </li>
                   <li>
                     <span className="text-black dark:text-white">
-                      Category:
+                      Categoria:
                     </span>
-                    Events
+                    Inclusão
                   </li>
                 </ul>
 
                 <div className="blog-details">
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur
-                    leo. Ut venenatis rhoncus quam sed condimentum. Curabitur
-                    vel turpis in dolor volutpat imperdiet in ut mi. Integer non
-                    volutpat nulla. Nunc elementum elit viverra, tempus quam
-                    non, interdum ipsum.
+                  Em um mundo cada vez  mais conectado e diverso,
+                  as empresas têm a oportunidade e a responsabilidade
+                  de construir ambientes de trabalho que reflitam a
+                  pluralidade da sociedade. É nesse contexto que as vagas
+                  afirmativas e inclusivas ganham relevância estratégica e social.
                   </p>
 
                   <p>
-                    Aenean augue ex, condimentum vel metus vitae, aliquam porta
-                    elit. Quisque non metus ac orci mollis posuere. Mauris vel
-                    ipsum a diam interdum ultricies sed vitae neque. Nulla
-                    porttitor quam vitae pulvinar placerat. Nulla fringilla elit
-                    sit amet justo feugiat sodales. Morbi eleifend, enim non
-                    eleifend laoreet, odio libero lobortis lectus, non porttitor
-                    sem urna sit amet metus. In sollicitudin quam est,
-                    pellentesque consectetur felis fermentum vitae.
+                  Elas não apenas abrem portas para pessoas historicamente
+                  excluídas, mas também fortalecem a inovação e a
+                  competitividade das organizações. Vamos explorar
+                  a importância desse tema, como ele pode ser
+                  implementado e como símbolos representativos
+                  podem reforçar a comunicação.
                   </p>
 
                   <div className="flex flex-wrap gap-5">

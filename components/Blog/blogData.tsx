@@ -7,6 +7,7 @@ const BlogData: Blog[] = [
     title: "Afirmativas e Inclusivas",
     metadata:
       "Vagas Afirmativas e Inclusivas: Um Caminho para a Transformação Social e Empresarial",
+    //mainText: 
   },
   {
     _id: 2,
