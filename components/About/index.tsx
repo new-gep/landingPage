@@ -41,6 +41,7 @@ const About = () => {
                 fill
               />
             </motion.div>
+            
             <motion.div
               variants={{
                 hidden: {
