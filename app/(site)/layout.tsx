@@ -10,27 +10,49 @@ import "../globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 import ToasterContext from "../context/ToastContext";
+import { usePathname } from "next/navigation";
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  
+  const pathname = usePathname();
+
+  const isSalesPage = pathname.includes("/sales");
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`dark:bg-black ${inter.className}`}>
         <ThemeProvider
+
           enableSystem={false}
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme={isSalesPage ? "light" : "dark"}
         >
-          <Lines />
-          <Header />
-          <ToasterContext />
-          {children}
-          <Footer />
-          <ScrollToTop />
+          { 
+            !isSalesPage && (
+              <>
+                <Lines />
+                <Header />
+                <ToasterContext />
+              </>
+            )
+          }
+
+
+            {children}
+          {
+            !isSalesPage && (
+              <>
+                <Footer />
+                <ScrollToTop />
+              </>
+            )
+          }
         </ThemeProvider>
+
       </body>
     </html>
   );
