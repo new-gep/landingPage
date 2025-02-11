@@ -58,75 +58,80 @@ export default function Presentation() {
                 {({ handleChange, handleSubmit, values }) => (
                   <form
                     onSubmit={handleSubmit}
-                    className="flex flex-col lg:h-4/4 gap-2 rounded-3xl bg-black px-5 py-3 shadow-lg"
+                    className="flex flex-col lg:h-4/4 justify-between rounded-3xl bg-black px-5 py-3 shadow-lg"
                   >
                     <div className="w-full">
-                      <h2 className="text-center font-bold text-primary md:text-xl lg:text-4xl">
+                      <h2 className="text-center font-bold text-primary md:text-xl lg:text-2xl">
                         Solicitar Demonstração
                       </h2>
                       <p className=" text-gray-500 text-center">
                         Preencha o formulário abaixo e entraremos em contato:
                       </p>
                     </div>
-                    <div className="flex flex-col gap-3">
-                      <input
-                        type="text"
-                        id="name1"
-                        name="name1"
-                        placeholder="Nome*"
-                        className="rounded-full bg-white p-1 px-2 lg:p-3 text-black"
-                        onChange={handleChange}
-                        value={values.name1}
-                      />
+
+                    <div className="flex flex-col gap-2">
+                      <div className="flex flex-col gap-3">
+                        <input
+                          type="text"
+                          id="name1"
+                          name="name1"
+                          placeholder="Nome*"
+                          className="rounded-full bg-white p-1 px-2 lg:p-2 text-black"
+                          onChange={handleChange}
+                          value={values.name1}
+                        />
+                      </div>
+                      <div className="flex flex-col gap-3">
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          placeholder="E-mail Corporativo*"
+                          className="rounded-full bg-white p-1 px-2 lg:p-2 text-black"
+                          onChange={handleChange}
+                          value={values.email}
+                        />
+                      </div>
+                      <div className="flex flex-col gap-3">
+                        <input
+                          type="tel"
+                          id="phone"
+                          name="phone"
+                          placeholder="Número de Telefone com DDD ou WhatsApp*"
+                          className="rounded-full bg-white p-1 px-2 lg:p-2 text-black"
+                          onChange={handleChange}
+                          value={values.phone}
+                        />
+                      </div>
+                      <div className="flex flex-col gap-3">
+                        <select
+                          id="position"
+                          name="position"
+                          className="rounded-full bg-white p-1 px-2 lg:p-2 text-black"
+                          onChange={handleChange}
+                          value={values.position}
+                        >
+                          <option value="" disabled>
+                            Selecione seu Cargo*
+                          </option>
+                          <option value="manager">Gerente</option>
+                          <option value="developer">Desenvolvedor</option>
+                          <option value="designer">Designer</option>
+                        </select>
+                      </div>
                     </div>
-                    <div className="flex flex-col gap-3">
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="E-mail Corporativo*"
-                        className="rounded-full bg-white p-1 px-2 lg:p-3 text-black"
-                        onChange={handleChange}
-                        value={values.email}
-                      />
-                    </div>
-                    <div className="flex flex-col gap-3">
-                      <input
-                        type="tel"
-                        id="phone"
-                        name="phone"
-                        placeholder="Número de Telefone com DDD ou WhatsApp*"
-                        className="rounded-full bg-white p-1 px-2 lg:p-3 text-black"
-                        onChange={handleChange}
-                        value={values.phone}
-                      />
-                    </div>
-                    <div className="flex flex-col gap-3">
-                      <select
-                        id="position"
-                        name="position"
-                        className="rounded-full bg-white p-1 px-2 lg:p-3 text-black"
-                        onChange={handleChange}
-                        value={values.position}
-                      >
-                        <option value="" disabled>
-                          Selecione seu Cargo*
-                        </option>
-                        <option value="manager">Gerente</option>
-                        <option value="developer">Desenvolvedor</option>
-                        <option value="designer">Designer</option>
-                      </select>
-                    </div>
+
                     <p className="lg:mt-2 text-center text-sm text-white">
                       Ao enviar este formulário, declaro que li e aceito a{" "}
                       <a href="#" className="text-primary underline">
                         Política de Privacidade
                       </a>
                     </p>
+
                     <div className="flex justify-center">
                       <button
                         type="submit"
-                        className="w-fit rounded-full border border-primary bg-primary/40 p-2 font-bold text-primary"
+                        className="w-fit rounded-full border border-primary bg-primary/40 py-1 px-2 m-2 font-bold text-primary"
                       >
                         Solicitar Demonstração
                       </button>
@@ -246,7 +251,8 @@ export default function Presentation() {
             quaerat molestiae ad totam, accusamus quo accusantium{" "}
           </p>
         </div>
-        <div className="flex py-5 lg:mt-0 lg:h-3/4 w-full flex-col items-center gap-4 px-5 lg:flex-row lg:justify-around">
+
+        <div className="flex py-5 lg:mt-0 h-full lg:h-3/4 w-full flex-col items-center gap-4 px-5 lg:flex-row justify-around">
           <div className="flex flex-col items-center justify-center lg:w-1/4 lg:gap-5 ">
             <Image
               src={check}
@@ -296,24 +302,24 @@ export default function Presentation() {
       </div>
 
       <div className="h-screen bg-black lg:flex">
-        <div className="flex h-full flex-col gap-10 lg:w-1/2 lg:gap-5">
+        <div className="flex h-full flex-col  lg:w-1/2 lg:gap-5">
           <div className="px-5 py-4 text-center font-extrabold text-primary  lg:text-2xl">
             <h1>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
             </h1>
           </div>
 
-          <div className="px-5 text-center lg:flex flex-col hidden">
+          <div className="px-5 text-center  flex-col">
             <h2 className="font-bold text-white ">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.{" "}
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. beatae quasi sed animi velit modi
             </h2>
-            <p className="px-2 lg:px-10 ">
+            <p className="px-2 lg:px-10 lg:flex hidden">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa
-              beatae quasi sed animi velit modi 
+              beatae quasi sed animi velit modi  
             </p>
           </div>
 
-          <div className="flex w-full flex-col items-center justify-center gap-15 px-10 lg:gap-5">
+          <div className="flex w-full flex-col items-center justify-center gap-15 px-10 lg:gap-5  h-full">
             <div className={"w-4/4 flex items-center justify-center"}>
              <div className="z-10 -mr-5 flex items-center justify-center rounded-full border-2 border-primary bg-primary/90 hover:bg-primary lg:-mr-22 lg:h-25 lg:w-25 transition-colors duration-300">
                 <Image
@@ -391,7 +397,8 @@ export default function Presentation() {
           />
         </div>
 
-        <div className="flex h-4/6 lg:w-1/2 flex-col items-center lg:justify-center gap-3">
+        <div className="flex h-1/4 lg:h-4/6 lg:w-1/2 flex-col items-center justify-between lg:justify-center lg:gap-3">
+
           <div className="px-2">
             <h1 className="text-center lg:text-5xl font-bold text-black">
               Lorem ipsum
@@ -406,8 +413,13 @@ export default function Presentation() {
             <p className="p-5 text-xl lg:text-2xl text-black">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Consectetur eligendi enim veniam odio! Blanditiis cupiditate
-              ratione, expedita rerum earum repellendus unde temporibus,
-              explicabo asperiores, quaerat error ut harum animi aut?
+              ratione, expedita rerum earum repellendus
+            </p>
+          </div>
+
+          <div className="flex lg:hidden">
+            <p className="px-5 text-xl lg:text-2xl text-black">
+              Lorem ipsum dolor sit amet
             </p>
           </div>
 
@@ -437,6 +449,7 @@ export default function Presentation() {
           </div>
         </div>
 
+      </div>
         <div className="h-1/12 absolute bottom-0 left-0 flex w-full bg-black">
           <div className="hidden lg:flex lg:w-2/6 items-center justify-center">
             <Image
@@ -457,7 +470,6 @@ export default function Presentation() {
             </p>
           </div>
         </div>
-      </div>
 
       <div className="fixed bottom-10 right-5">
         <Image
