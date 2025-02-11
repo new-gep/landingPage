@@ -22,7 +22,7 @@ import whatsapp from "../icon/whatsapp.png";
 export default function Presentation() {
   return (
     <section className="relative" style={{ fontFamily: "Roboto, sans-serif" }}>
-      <div id="form" className="flex h-screen w-full flex-col bg-[#f0eaf1]">
+      <div id="form" className="flex h-screen w-full flex-col justify-between bg-[#f0eaf1]">
         <div className="bg-[#f0eaf1] h-full lg:h-5/6">
           {/* Header */}
           <div className="flex h-15 lg:h-20 w-full items-center absolute lg:relative justify-between rounded-b-3xl bg-black ">
@@ -58,10 +58,10 @@ export default function Presentation() {
                 {({ handleChange, handleSubmit, values }) => (
                   <form
                     onSubmit={handleSubmit}
-                    className="flex flex-col lg:h-4/4 gap-4 rounded-3xl bg-black px-5 py-5 shadow-lg"
+                    className="flex flex-col lg:h-4/4 gap-2 rounded-3xl bg-black px-5 py-5 shadow-lg"
                   >
                     <div className="w-full">
-                      <h2 className="text-center font-bold text-primary lg:text-4xl">
+                      <h2 className="text-center font-bold text-primary md:text-xl lg:text-4xl">
                         Solicitar Demonstração
                       </h2>
                       <p className=" text-gray-500 text-center">
@@ -144,7 +144,7 @@ export default function Presentation() {
           </div>
         </div>
 
-        <div className="lg:h-1/6 w-full rounded-t-3xl bg-black">
+        <div className="lg:h-2/12 w-full rounded-t-3xl bg-black">
           <div className="text-center p-3">
             <div className="flex flex-col gap-2 justify-between">
               <h1 className="font-bold text-primary flex items-center justify-between"> <Image src={shield} alt="background" className="text-primary bg-primary rounded-full h-8 w-8 p-1 mr-2"/>Lorem ipsum dolor sit amet  <span></span> </h1>
@@ -299,8 +299,7 @@ export default function Presentation() {
         <div className="flex h-full flex-col gap-10 lg:w-1/2 lg:gap-5">
           <div className="px-5 py-4 text-center font-extrabold text-primary  lg:text-2xl">
             <h1>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum
-              natus, architecto doloribus necessitatibus labore et iste
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
             </h1>
           </div>
 
@@ -310,22 +309,20 @@ export default function Presentation() {
             </h2>
             <p className="px-2 lg:px-10 ">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa
-              beatae quasi sed animi velit modi dignissimos enim exercitationem
-              repellendus nemo! Fuga magni, sit dolores iusto delectus libero
-              vel sapiente saepe!
+              beatae quasi sed animi velit modi 
             </p>
           </div>
 
           <div className="flex w-full flex-col items-center justify-center gap-15 px-10 lg:gap-5">
             <div className={"w-4/4 flex items-center justify-center"}>
-            <div className="z-10 -mr-5 flex items-center justify-center rounded-full border-2 border-primary bg-primary/90 hover:bg-primary lg:-mr-24 lg:h-30 lg:w-30 transition-colors duration-300">
+             <div className="z-10 -mr-5 flex items-center justify-center rounded-full border-2 border-primary bg-primary/90 hover:bg-primary lg:-mr-22 lg:h-25 lg:w-25 transition-colors duration-300">
                 <Image
                   src={signature}
                   alt="background"
                   className="w-15 object-cover lg:h-15 lg:w-15"
                 />
               </div>
-              <div className="w-5/6 rounded-3xl bg-white py-1 pl-10 shadow shadow-white lg:pl-25">
+              <div className="w-5/6 rounded-3xl bg-white  pl-10 shadow shadow-white lg:pl-25">
                 <p>
                   <span className="font-bold text-black">Assinatura</span>
                 </p>
@@ -337,7 +334,7 @@ export default function Presentation() {
             </div>
 
             <div className={"w-4/4 flex items-center justify-center"}>
-              <div className="z-10 -mr-5 flex items-center justify-center rounded-full border-2 border-primary bg-primary/90 hover:bg-primary lg:-mr-24 lg:h-30 lg:w-30 transition-colors duration-300">
+              <div className="z-10 -mr-5 flex items-center justify-center rounded-full border-2 border-primary bg-primary/90 hover:bg-primary lg:-mr-22 lg:h-25 lg:w-25 transition-colors duration-300">
                 <Image
                   src={ping}
                   alt="background"
@@ -356,7 +353,7 @@ export default function Presentation() {
             </div>
 
             <div className={"w-4/4 flex items-center justify-center"}>
-              <div className="z-10 -mr-5 flex items-center justify-center rounded-full border-2 border-primary bg-primary/90 hover:bg-primary lg:-mr-24 lg:h-30 lg:w-30 transition-colors duration-300">
+            <div className="z-10 -mr-5 flex items-center justify-center rounded-full border-2 border-primary bg-primary/90 hover:bg-primary lg:-mr-22 lg:h-25 lg:w-25 transition-colors duration-300">
                 <Image
                   src={cloud}
                   alt="background"
