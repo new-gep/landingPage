@@ -43,7 +43,7 @@ export default function Presentation() {
 
           <div className="mt-8 lg:mt-3 h-full flex lg:h-5/6 w-full flex-col items-center bg-[#f0eaf1] lg:flex-row justify-center">
             {/* Form */}
-            <div className="flex lg:h-6/6 h-4/6 justify-center lg:w-1/2 lg:items-center ">
+            <div className="flex lg:h-6/6 h-4/6 px-2 justify-center lg:w-1/2 lg:items-center ">
               <Formik
                 initialValues={{
                   name1: "",
