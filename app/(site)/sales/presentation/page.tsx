@@ -25,14 +25,15 @@ export default function Presentation() {
       <div id="form" className="flex h-screen w-full flex-col bg-[#f0eaf1]">
         <div className="bg-[#f0eaf1] h-full md:h-5/6">
           {/* Header */}
-          <div className="flex h-20 w-full absolute md:relative items-center justify-between rounded-b-3xl bg-black ">
+          <div className="flex h-15 md:h-20 w-full items-center absolute md:relative justify-between rounded-b-3xl bg-black ">
             <div className="px-5">
-              <h1 className="text-2xl font-bold text-primary ">New Gep</h1>
+              <h1 className="md:text-2xl font-bold text-primary ">New Gep</h1>
             </div>
 
             <Image
               src="/images/logo/logo-dark.svg"
               alt="logo"
+              className="h-12 w-12 md:h-20 md:w-20"
               width={100}
               height={100}
               layout="intrinsic"
@@ -40,7 +41,7 @@ export default function Presentation() {
             />
           </div>
 
-          <div className="mt-5 h-full flex md:h-5/6 w-full flex-col items-center bg-[#f0eaf1] md:flex-row justify-center">
+          <div className="mt-8 md:mt-3 h-full flex md:h-5/6 w-full flex-col items-center bg-[#f0eaf1] md:flex-row justify-center">
             {/* Form */}
             <div className="flex md:h-6/6 justify-center md:w-1/2 md:items-center ">
               <Formik
@@ -57,13 +58,13 @@ export default function Presentation() {
                 {({ handleChange, handleSubmit, values }) => (
                   <form
                     onSubmit={handleSubmit}
-                    className="flex flex-col h-6/6 md:h-4/4 gap-4 rounded-3xl bg-black px-10 py-5 shadow-lg"
+                    className="flex flex-col md:h-4/4 gap-4 rounded-3xl bg-black px-5 py-5 shadow-lg"
                   >
-                    <div>
+                    <div className="w-full ">
                       <h2 className="text-center font-bold text-primary md:text-4xl">
                         Solicitar Demonstração
                       </h2>
-                      <p className="text-center text-gray-500 ">
+                      <p className=" text-gray-500 text-center">
                         Preencha o formulário abaixo e entraremos em contato:
                       </p>
                     </div>
@@ -73,7 +74,7 @@ export default function Presentation() {
                         id="name1"
                         name="name1"
                         placeholder="Nome*"
-                        className="rounded-full bg-white p-3 text-black"
+                        className="rounded-full bg-white p-1 px-2 md:p-3 text-black"
                         onChange={handleChange}
                         value={values.name1}
                       />
@@ -84,7 +85,7 @@ export default function Presentation() {
                         id="email"
                         name="email"
                         placeholder="E-mail Corporativo*"
-                        className="rounded-full bg-white p-3 text-black"
+                        className="rounded-full bg-white p-1 px-2 md:p-3 text-black"
                         onChange={handleChange}
                         value={values.email}
                       />
@@ -95,7 +96,7 @@ export default function Presentation() {
                         id="phone"
                         name="phone"
                         placeholder="Número de Telefone com DDD ou WhatsApp*"
-                        className="rounded-full bg-white p-3 text-black"
+                        className="rounded-full bg-white p-1 px-2 md:p-3 text-black"
                         onChange={handleChange}
                         value={values.phone}
                       />
@@ -104,7 +105,7 @@ export default function Presentation() {
                       <select
                         id="position"
                         name="position"
-                        className="rounded-full bg-white p-3 text-black"
+                        className="rounded-full bg-white p-1 px-2 md:p-3 text-black"
                         onChange={handleChange}
                         value={values.position}
                       >
@@ -116,12 +117,11 @@ export default function Presentation() {
                         <option value="designer">Designer</option>
                       </select>
                     </div>
-                    <p className="mt-4 text-center text-sm text-white">
+                    <p className="md:mt-4 text-center text-sm text-white">
                       Ao enviar este formulário, declaro que li e aceito a{" "}
                       <a href="#" className="text-primary underline">
                         Política de Privacidade
                       </a>
-                      .
                     </p>
                     <div className="flex justify-center">
                       <button
@@ -147,7 +147,7 @@ export default function Presentation() {
           <div className="text-center p-3">
             <div className="flex flex-col gap-2 justify-between">
               <h1 className="font-bold text-primary flex items-center justify-between"> <Image src={shield} alt="background" className="text-primary bg-primary rounded-full h-8 w-8 p-1 mr-2"/>Lorem ipsum dolor sit amet  <span></span> </h1>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ex quas voluptatum, fugit </p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ex quas voluptatum</p>
             </div>
             <div>
 
@@ -188,10 +188,10 @@ export default function Presentation() {
           <div className="relative flex h-full items-center justify-center md:w-1/2">
             <div className="flex w-full flex-col gap-5 px-5 py-3 ">
               <div className="flex flex-col gap-3">
-                <h1 className="text-center text-3xl font-bold text-primary">
+                <h1 className="text-center md:text-3xl font-bold text-primary">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </h1>
-                <p className="font-semibold">
+                <p className="font-semibold hidden md:flex">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
                   sint, similique dolores sapiente consequuntur illo sed modi
                   eveniet dolorum assumenda voluptatum ex quibusdam animi! Quia
@@ -218,8 +218,8 @@ export default function Presentation() {
                 </li>
               </ul>
 
-              <div className="mt-10 flex items-center justify-center md:hidden">
-                <button className="w-1/2 cursor-pointer rounded-full bg-primary py-2 font-bold text-black transition-all duration-300 hover:scale-105 hover:opacity-70 focus:outline-none">
+              <div className="flex items-center justify-center md:hidden">
+                <button className="md:w-1/2 cursor-pointer rounded-full bg-primary py-2 px-2 font-bold text-black transition-all duration-300 hover:scale-105 hover:opacity-70 focus:outline-none">
                   Solicitar Demonstração
                 </button>
               </div>
@@ -236,8 +236,8 @@ export default function Presentation() {
       </div>
 
       <div className="h-screen bg-primary">
-        <div className="flex h-1/4 flex-col items-center justify-center text-center">
-          <h1 className="text-3xl font-extrabold text-black md:text-4xl">
+        <div className="md:flex hidden h-1/4 flex-col items-center justify-center text-center">
+          <h1 className="font-extrabold text-black md:text-4xl">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </h1>
           <p className="font-light text-black md:w-1/2 md:text-center">
@@ -245,14 +245,14 @@ export default function Presentation() {
             quaerat molestiae ad totam, accusamus quo accusantium{" "}
           </p>
         </div>
-        <div className="flex h-3/4 w-full flex-col items-center gap-4 px-5 md:flex-row md:justify-around">
+        <div className="flex py-5 md:mt-0 md:h-3/4 w-full flex-col items-center gap-4 px-5 md:flex-row md:justify-around">
           <div className="flex flex-col items-center justify-center md:w-1/4 md:gap-5 ">
             <Image
               src={check}
               alt="background"
               className="w-10 transform-gpu object-cover transition-transform duration-300 hover:scale-110 md:h-25 md:w-25"
             />
-            <h4 className="px-3 text-center text-2xl font-bold text-black">
+            <h4 className="px-3 text-center md:text-2xl font-bold text-black">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
             </h4>
             <p className="text-black">
@@ -267,7 +267,7 @@ export default function Presentation() {
               alt="background"
               className="w-10 transform-gpu object-cover transition-transform duration-300 hover:scale-110 md:h-25 md:w-25"
             />
-            <h4 className="px-3 text-center text-2xl font-bold text-black">
+            <h4 className="px-3 text-center md:text-2xl font-bold text-black">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
             </h4>
             <p className="text-black">
@@ -282,7 +282,7 @@ export default function Presentation() {
               alt="background"
               className="w-10 transform-gpu object-cover transition-transform duration-300 hover:scale-110 md:h-25 md:w-25"
             />
-            <h4 className="px-3 text-center text-2xl font-bold text-black">
+            <h4 className="px-3 text-center md:text-2xl font-bold text-black">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
             </h4>
             <p className="text-black">
@@ -303,11 +303,11 @@ export default function Presentation() {
             </h1>
           </div>
 
-          <div className="px-5 text-center">
+          <div className="px-5 text-center md:flex flex-col hidden">
             <h2 className="font-bold text-white ">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.{" "}
             </h2>
-            <p className="px-2 md:px-10">
+            <p className="px-2 md:px-10 ">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa
               beatae quasi sed animi velit modi dignissimos enim exercitationem
               repellendus nemo! Fuga magni, sit dolores iusto delectus libero
@@ -396,16 +396,16 @@ export default function Presentation() {
 
         <div className="flex h-5/6 md:w-1/2 flex-col items-center md:justify-center gap-3">
           <div className="px-2">
-            <h1 className="text-center text-5xl font-bold text-black">
+            <h1 className="text-center md:text-5xl font-bold text-black">
               Lorem ipsum
             </h1>
-            <p className="text-light">
+            <p className="text-light text-center md:text-start">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
               facilis neque culpa
             </p>
           </div>
 
-          <div>
+          <div className="md:flex hidden">
             <p className="p-5 text-xl md:text-2xl text-black">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit.
               Consectetur eligendi enim veniam odio! Blanditiis cupiditate
@@ -415,8 +415,7 @@ export default function Presentation() {
           </div>
 
           <div
-            className="flex flex-col gap-3
-          "
+            className="flex flex-col gap-3 mt-15 md:mt-0"
           >
             <h1 className="font-extrabold text-black">Lorem ipsum dolor</h1>
             <div className="flex justify-between gap-2">
