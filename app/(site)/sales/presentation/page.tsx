@@ -43,7 +43,7 @@ export default function Presentation() {
 
           <div className="mt-8 lg:mt-3 h-full flex lg:h-5/6 w-full flex-col items-center bg-[#f0eaf1] lg:flex-row justify-center">
             {/* Form */}
-            <div className="flex lg:h-6/6 justify-center lg:w-1/2 lg:items-center ">
+            <div className="flex lg:h-6/6 h-4/6 justify-center lg:w-1/2 lg:items-center ">
               <Formik
                 initialValues={{
                   name1: "",
@@ -136,7 +136,7 @@ export default function Presentation() {
               </Formik>
             </div>
 
-            <div className="lg:flex sm:hidden h-full lg:h-5/6 items-center justify-center lg:p-12 duration-700 animate-in fade-in lg:w-1/2 ">
+            <div className="lg:flex hidden h-full lg:h-5/6 items-center justify-center lg:p-12 duration-700 animate-in fade-in lg:w-1/2 ">
               <div className="items-center justify-center flex mb-20 lg:mb-0" >
                 <Image src={human1} alt="human" className="lg:h-full lg:w-full lg:p-20 h-2/4 w-2/4 " />
               </div>
