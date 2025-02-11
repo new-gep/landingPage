@@ -58,7 +58,7 @@ export default function Presentation() {
                 {({ handleChange, handleSubmit, values }) => (
                   <form
                     onSubmit={handleSubmit}
-                    className="flex flex-col lg:h-4/4 gap-2 rounded-3xl bg-black px-5 py-5 shadow-lg"
+                    className="flex flex-col lg:h-4/4 gap-2 rounded-3xl bg-black px-5 py-3 shadow-lg"
                   >
                     <div className="w-full">
                       <h2 className="text-center font-bold text-primary md:text-xl lg:text-4xl">
@@ -117,7 +117,7 @@ export default function Presentation() {
                         <option value="designer">Designer</option>
                       </select>
                     </div>
-                    <p className="lg:mt-4 text-center text-sm text-white">
+                    <p className="lg:mt-2 text-center text-sm text-white">
                       Ao enviar este formulário, declaro que li e aceito a{" "}
                       <a href="#" className="text-primary underline">
                         Política de Privacidade
@@ -126,7 +126,7 @@ export default function Presentation() {
                     <div className="flex justify-center">
                       <button
                         type="submit"
-                        className="w-fit rounded-full border border-primary bg-primary/40 p-3 font-bold text-primary"
+                        className="w-fit rounded-full border border-primary bg-primary/40 p-2 font-bold text-primary"
                       >
                         Solicitar Demonstração
                       </button>
@@ -383,16 +383,15 @@ export default function Presentation() {
 
       <div className="flex lg:flex-row flex-col h-screen items-start lg:justify-end bg-primary">
 
-        <div className=" flex lg:h-5/6 lg:w-1/2 items-center justify-center px-3 py-5">
-          {" "}
+        <div className="flex lg:h-5/6 lg:w-1/2 items-center justify-center px-3 py-5">
           <Image
             src={human}
             alt="background"
-            className="lg:h-5/6 lg:w-11/12 rounded-3xl bg-white object-cover" // Modificado
+            className="lg:h-6/6 lg:w-10/12 rounded-3xl bg-white object-cover" // Modificado
           />
         </div>
 
-        <div className="flex h-5/6 lg:w-1/2 flex-col items-center lg:justify-center gap-3">
+        <div className="flex h-4/6 lg:w-1/2 flex-col items-center lg:justify-center gap-3">
           <div className="px-2">
             <h1 className="text-center lg:text-5xl font-bold text-black">
               Lorem ipsum
