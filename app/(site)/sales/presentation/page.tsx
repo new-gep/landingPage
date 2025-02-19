@@ -469,7 +469,7 @@ export default function Presentation() {
 								<p className="mt-1">
 									<span className="font-bold text-black">Assinatura</span>
 								</p>
-                <div className="lg:p-1">
+                <div  >
                   <p>
                     Melhor comodidade para assinaturas dos documentos
 								</p>
