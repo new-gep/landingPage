@@ -421,7 +421,7 @@ export default function Presentation() {
 							className="w-10 transform-gpu object-cover transition-transform duration-300 hover:scale-110 lg:h-25 lg:w-25"
 						/>
 						<h4 className="px-3 text-center lg:text-2xl font-bold text-black">
-							Serviço amigável
+							Serviço Amigo
 						</h4>
 						<ul className="text-black g-2">
 							<li>
@@ -431,7 +431,7 @@ export default function Presentation() {
 								<span >Pagamento por Uso</span>
 							</li>
 							<li>
-								<span>Suporte</span>
+								<span>Escalável e Modular</span>
 							</li>
 						</ul>
 					</div>
@@ -469,7 +469,7 @@ export default function Presentation() {
 								<p className="mt-1">
 									<span className="font-bold text-black">Assinatura</span>
 								</p>
-                <div className="lg:p-2">
+                <div className="lg:p-1">
                   <p>
                     Melhor comodidade para assinaturas dos documentos
 								</p>
@@ -489,7 +489,7 @@ export default function Presentation() {
 								<p className="mt-1">
 									<span className="font-bold text-black">Envio</span>
 								</p>
-                <div className="lg:p-2">
+                <div className="lg:p-1">
                   <p>
                     Aviso de ausências enviado direto pelo app
                   </p>
@@ -509,7 +509,7 @@ export default function Presentation() {
 								<p className="mt-1">
 									<span className="font-bold text-black">Chat inteligente</span>
 								</p>
-                <div className="lg:p-2">
+                <div className="lg:p-1">
                   <p>
                     Comunicação direta com o RH
                   </p>
@@ -557,8 +557,8 @@ export default function Presentation() {
 					</div>
 
 					<div className="flex lg:hidden">
-						<p className="px-5 text-center text-xl lg:text-2xl text-black">
-							Estamos preparados <br/>e você?
+						<p className="px-5 py-2 text-center text-lg lg:text-2xl text-black">
+							Estamos preparados e você?
 						</p>
 					</div>
 
