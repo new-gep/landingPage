@@ -8,8 +8,8 @@ import { Default } from "@/api/post/lead";
 import human1 from "../picture/pose_50.png";
 import laptop from "../../../../public/images/sales/laptop.png";
 import check from "../icon/check.png";
-import cloud from "../icon/cloud.svg";
-import ping from "../icon/ping.svg";
+import cloud from "../icon/chat.svg";
+import ping from "../icon/send.svg";
 import signature from "../icon/signature.svg";
 import phone from "../picture/phone.svg";
 import human from "../picture/human.svg";
@@ -328,9 +328,9 @@ export default function Presentation() {
 								</p>
 							</div>
 
-							<ul className="flex list-disc flex-col gap-5 text-white">
+							<ul className="flex list-disc flex-col gap-5 text-white lg:text-start text-justify items-center justify-center ">
 								<li>
-									<span className="font-bold text-primary/80">Dashboards Inteligentes</span> Visualize dados em tempo real para decisões estratégicas mais rápidas.
+									<span className="font-bold text-primary/80 text-justify">Dashboards Inteligentes</span> Visualize dados em tempo real para decisões estratégicas mais rápidas.
 								</li>
 								<li>
 									<span className="font-bold text-primary/80">Redução de Burocracia</span> Todos os documentos do colaborador digitalizados, assinaturas eletrônicas e processos automatizados.
@@ -371,7 +371,7 @@ export default function Presentation() {
 					</p>
 				</div>
 
-				<div className="flex py-5 lg:mt-0 h-full lg:h-3/4 w-full flex-col items-center gap-4 px-5 lg:flex-row justify-around">
+				<div className="flex text-center py-5 lg:mt-0 h-full lg:h-3/4 w-full flex-col items-center gap-4 px-5 lg:flex-row justify-around">
 					<div className="flex flex-col items-center justify-center lg:w-1/4 lg:gap-5 ">
 						<Image
 							src={check}
@@ -381,7 +381,7 @@ export default function Presentation() {
 						<h4 className="px-3 text-center lg:text-2xl font-bold text-black">
 						Organização
 						</h4>
-						<ul className="text-black g-2">
+						<ul className="text-black g-2 ">
 							<li>
 								<span >Processos 100% Digitais</span>
 							</li>
@@ -446,35 +446,38 @@ export default function Presentation() {
 						</h1>
 					</div>
 
-					<div className="px-5 text-center  flex-col">
+					<div className="px-5 text-center flex items-center justify-center flex-col">
 						<h2 className="font-bold text-white ">
-						 Mais Agilidade e Transparência
+						 Agilidade e Transparência
 						</h2>
-						<p className="px-2 lg:px-10 lg:flex hidden">
-							Uma experiência digital que conecta empresas e colaboradores em qualquer lugar do País!
+						<p className="px-2 lg:px-10  text-center lg:flex ">
+							Uma experiência digital que conecta empresas e colaboradores!
 						</p>
 					</div>
 
-					<div className="flex w-full flex-col items-center justify-center gap-15 px-10 lg:gap-5  h-full">
-						<div className={"w-4/4 flex items-center justify-center"}>
-						 <div className="z-10 -mr-5 flex items-center justify-center rounded-full border-2 border-primary bg-primary/90 hover:bg-primary lg:-mr-22 lg:h-25 lg:w-25 transition-colors duration-300">
+					<div className="flex w-full flex-col items-center justify-center gap-15 px-10 lg:gap-5 h-full">
+						
+						<div className="w-full flex items-center justify-center">
+							<div className="z-10 -mr-5 flex items-center justify-center rounded-full border-2 border-primary bg-primary/90 hover:bg-primary lg:-mr-22 lg:h-25 lg:w-25 transition-colors duration-300">
 								<Image
 									src={signature}
 									alt="background"
 									className="w-15 object-cover lg:h-15 lg:w-15"
 								/>
 							</div>
-							<div className="w-5/6 rounded-3xl bg-white  pl-10 shadow shadow-white lg:pl-25">
-								<p>
+							<div className="w-5/6 lg:h-20 rounded-3xl bg-white pl-12 shadow shadow-white lg:pl-27">
+								<p className="mt-1">
 									<span className="font-bold text-black">Assinatura</span>
 								</p>
-								<p>
-									Melhor comodidade para assinaturas dos documentos
+                <div className="lg:p-2">
+                  <p>
+                    Melhor comodidade para assinaturas dos documentos
 								</p>
+                </div>
 							</div>
 						</div>
 
-						<div className={"w-4/4 flex items-center justify-center"}>
+						<div className="w-full flex items-center justify-center">
 							<div className="z-10 -mr-5 flex items-center justify-center rounded-full border-2 border-primary bg-primary/90 hover:bg-primary lg:-mr-22 lg:h-25 lg:w-25 transition-colors duration-300">
 								<Image
 									src={ping}
@@ -482,17 +485,19 @@ export default function Presentation() {
 									className="w-15 object-cover lg:h-15 lg:w-15"
 								/>
 							</div>
-							<div className="w-5/6 rounded-3xl bg-white py-1 pl-10 shadow shadow-white lg:pl-25">
-								<p>
+							<div className="w-5/6 lg:h-20 rounded-3xl bg-white pl-12 shadow shadow-white lg:pl-27">
+								<p className="mt-1">
 									<span className="font-bold text-black">Envio</span>
 								</p>
-								<p>
-									Aviso de Ausências diretamente pelo app
-								</p>
+                <div className="lg:p-2">
+                  <p>
+                    Aviso de ausências enviado direto pelo app
+                  </p>
+                </div>
 							</div>
 						</div>
 
-						<div className={"w-4/4 flex items-center justify-center"}>
+						<div className="w-full flex items-center justify-center">
 							<div className="z-10 -mr-5 flex items-center justify-center rounded-full border-2 border-primary bg-primary/90 hover:bg-primary lg:-mr-22 lg:h-25 lg:w-25 transition-colors duration-300">
 								<Image
 									src={cloud}
@@ -500,15 +505,18 @@ export default function Presentation() {
 									className="w-15 object-cover lg:h-15 lg:w-15"
 								/>
 							</div>
-							<div className="w-5/6 rounded-3xl bg-white py-1 pl-10 shadow shadow-white lg:pl-25">
-								<p>
+							<div className="w-5/6 lg:h-20 rounded-3xl bg-white pl-12 shadow shadow-white lg:pl-27">
+								<p className="mt-1">
 									<span className="font-bold text-black">Chat inteligente</span>
 								</p>
-								<p>
-									Comunicação direta com o RH
-								</p>
+                <div className="lg:p-2">
+                  <p>
+                    Comunicação direta com o RH
+                  </p>
+                </div>
 							</div>
 						</div>
+            
 					</div>
 				</div>
 				<div className="hidden h-full w-1/2 items-center justify-center lg:flex">
@@ -533,10 +541,10 @@ export default function Presentation() {
 				<div className="flex h-1/4 lg:h-4/6 lg:w-1/2 flex-col items-center justify-between lg:justify-center lg:gap-3">
 
 					<div className="px-2">
-						<h1 className="text-center lg:text-5xl font-bold text-black">
+						<h1 className="text-center text-3xl lg:text-5xl font-bold text-black">
 							New Gep
 						</h1>
-						<p className="text-light text-center lg:text-start">
+						<p className="text-light text-center lg:text-start px-5">
 							Com o propósito de solucionar as dores do Recurso Humanos.
 						</p>
 					</div>
@@ -550,7 +558,7 @@ export default function Presentation() {
 
 					<div className="flex lg:hidden">
 						<p className="px-5 text-center text-xl lg:text-2xl text-black">
-							Estamos preparados, <br/>e Você?
+							Estamos preparados <br/>e você?
 						</p>
 					</div>
 
@@ -608,7 +616,7 @@ export default function Presentation() {
 					</div>
 				</div>
 
-			<div className="fixed bottom-10 right-5">
+			<div className="fixed bottom-20 right-5">
 				<Image
 					src={whatsapp}
 					alt="background"
