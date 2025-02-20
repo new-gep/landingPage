@@ -371,9 +371,29 @@ export default function Presentation() {
                             <option value="" disabled>
                               Selecione seu Cargo*
                             </option>
-                            <option value="manager">Gerente</option>
-                            <option value="developer">Desenvolvedor</option>
-                            <option value="designer">Designer</option>
+                            <option value="unemployed">Não estou empregado (a) no momento</option>
+                            <option value="dp-analyst">Analista DP</option>
+                            <option value="dp-coordinator">Coordenador de DP</option>
+                            <option value="dp-manager">Gerente de DP</option>
+                            <option value="dp-director">Diretor de DP</option>
+                            <option value="dp-consultant">Consultor de DP</option>
+                            <option value="dp-intern">Estagiário de DP</option>
+                            <option value="rh-analyst">Analista de RH</option>
+                            <option value="rh-assistant">Assistente de RH</option>
+                            <option value="rh-business-partner">Business Partner de RH</option>
+                            <option value="rh-coordinator">Coordenador de RH</option>
+                            <option value="rh-director">Diretor de RH</option>
+                            <option value="rh-manager">Gerente de RH</option>
+                            <option value="ceo">Sócio/CEO</option>
+                            <option value="coach">Coach</option>
+                            <option value="rh-supervisor">Supervisor de RH</option>
+                            <option value="rh-consultant">Consultor de RH</option>
+                            <option value="rh-intern">Estagiário de RH</option>
+                            <option value="admin-finance">Administrativo/Financeiro</option>
+                            <option value="accountant">Contador</option>
+                            <option value="student">Estudante</option>
+                            <option value="teacher">Professor</option>
+                            <option value="others">Outros</option>
                           </select>
                           {touched.role && errors.role && (
                             <>
