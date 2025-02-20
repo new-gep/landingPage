@@ -11,6 +11,7 @@ import check from "../icon/check.png";
 import close from "../icon/close.svg";
 import cloud from "../icon/chat.svg";
 import ping from "../icon/send.svg";
+import policy from "../icon/policy.svg";
 import signature from "../icon/signature.svg";
 import phone from "../picture/phone.svg";
 import human from "../picture/human.svg";
@@ -86,21 +87,138 @@ export default function Presentation() {
     <section className="relative" style={{ fontFamily: "Roboto, sans-serif" }}>
       {isModalOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80">
-          <div className="relative w-3/4 h-3/4 p-5 bg-white rounded-lg shadow-lg">
+          <div className="relative h-full w-full lg:h-3/4 lg:w-3/4 lg:rounded-xl bg-white p-5 shadow-lg overflow-y-auto">
             <button
-              className="absolute top-2 right-2 text-black"
+              className="absolute right-2 top-2 text-black"
               onClick={() => setIsModalOpen(false)}
             >
               <Image
-                  src={close}
-                  alt="background"
-                  className="w-10 transform-gpu object-cover transition-transform duration-300 hover:scale-110"
-                />
+                src={close}
+                alt="background"
+                className="w-10 transform-gpu object-cover transition-transform duration-300 hover:scale-110"
+              />
             </button>
-            <h2 className="text-xl font-bold">Política de Privacidade</h2>
-            <p className="mt-2">
-              Aqui você pode colocar o conteúdo da sua política de privacidade.
-            </p>
+            <div className="flex items-center gap-2">
+              {/* <Image src={policy} alt="policy" className="w-10 hidden " /> */}
+              <h2 className="text-xl text-black font-bold">Política de Privacidade</h2>
+            </div>
+            <div className="px-2 lg:px-10 mt-10 text-justify flex flex-col gap-5">
+              <p className="mt-2">
+                A New Gep preza pela transparência quanto aos dados cadastrados no
+                nosso sistema e nos preocupamos com sua privacidade e proteção.
+                Sendo assim, você precisa conhecer e estar de acordo com a nossa
+                Política de Privacidade, pois nela você vai encontrar informações
+                claras sobre a coleta, uso, tratamento, armazenamento e proteção
+                dos seus dados. Esta política se aplica a todos os nossos produtos
+                e serviços, logo, ao utilizá-los você concorda com as regras
+                estabelecidas conforme as definições abaixo. No âmbito deste
+                documento, os termos e expressões a seguir destacados têm os
+                seguintes significados:
+              </p>
+              <p className="mt-2">
+                <strong>“Dados Pessoais”:</strong> são informações relacionadas à pessoa natural identificada ou identificável. Podem incluir, por exemplo, nome, endereço, e-mail, telefone, endereço IP e dados de geolocalização.
+              </p>
+              <p className="mt-2">
+                <strong>“Cookies”:</strong> são pequenos arquivos criados por sites visitados e que são salvos no computador do usuário, por meio do navegador. Um cookie é um dado que o website solicita ao seu navegador para armazenar no seu computador ou dispositivo móvel. O cookie permite que o website “lembre” suas ações ou preferências ao longo do tempo.
+              </p>
+              <p className="mt-2">
+                <strong>“Web Beacons”:</strong> os sinalizadores da web (também conhecidos como web bugs ou web beacons) são pequenas sequências de código que permitem a entrega de uma imagem gráfica em uma página da web com o objetivo de transferir dados de volta para nós.
+              </p>
+              <p className="mt-2">
+                <strong>“PROFILER”:</strong> é um software de pesquisa, com base em métodos estatísticos de correlações, análises de variância e clusters para mapeamento de perfil.
+              </p>
+              <p className="mt-2">
+                <strong>“Gestão”:</strong> software de automação de gestão de pessoas.
+              </p>
+              <p className="mt-2">
+                <strong>“Jobs”:</strong> plataforma de recrutamento e seleção.
+              </p>
+              <p className="mt-2">
+                <strong>“Controlador”:</strong> pessoa natural ou jurídica, de direito público ou privado, a quem competem as decisões referentes ao tratamento de dados pessoais.
+              </p>
+              <p className="mt-2">
+                <strong>“Operador”:</strong> pessoa natural ou jurídica, de direito público ou privado, que realiza o tratamento de dados pessoais em nome do controlador.
+              </p>
+              <p className="mt-2">
+                <strong>“Empresa, Empresas”:</strong> pessoa jurídica de direito público ou privado cliente da New Gep que contrata as soluções para automação do RH e departamento pessoal.
+              </p>
+              <p className="mt-2">
+                <strong>1. COLETA DE DADOS PESSOAIS E INFORMAÇÕES</strong>
+                <br />
+                Coletamos informações que você nos fornece diretamente ao utilizar nossos softwares como o PROFILER, Gestão e Jobs. Nesse contexto, por exemplo, coletamos informações quando você cria uma conta nas nossas plataformas, atualiza seu perfil, participa de certos recursos interativos, preenche formulários, pesquisas, se candidata a alguma vaga dos nossos clientes, solicita atendimento do suporte do cliente ou se comunica conosco pelos nossos diversos canais de comunicação como redes sociais, e-mail e telefone. As informações que coletamos podem incluir nome, endereço de e-mail, telefone, interesses, empresa, cargo, localidade, CPF e outras informações necessárias para a interação com nosso software. Vale ressaltar que é de extrema importância para a New Gep a coleta, armazenamento e tratamento dos dados pessoais dos usuários, a fim de possibilitar a prestação dos nossos serviços ofertados através das nossas plataformas.
+              </p>
+              <p className="mt-2">
+                <strong>2. USO DOS DADOS</strong>
+                <br />
+                Ao utilizar nossos produtos, os dados pessoais coletados, bem como demais informações, poderão ser armazenados, tratados e utilizados pela New Gep com as seguintes finalidades:
+                <ul className="list-disc list-inside">
+                  <li>possibilitar a prestação dos serviços ofertados pela New Gep, permitindo assim, a operacionalização das nossas plataformas;</li>
+                  <li>desenvolver melhorias nos nossos serviços;</li>
+                  <li>fornecer recomendações, conteúdos e recursos que correspondam com os interesses do usuário;</li>
+                  <li>fornecer um atendimento cada vez melhor e eficaz;</li>
+                  <li>entrar em contato com o intuito de apresentar novas oportunidades como vagas ou novos produtos que melhorem a experiência do usuário;</li>
+                  <li>enviar-lhe conteúdo relevante sobre Recursos Humanos, Recrutamento e Seleção e a utilização de tecnologia nessas áreas;</li>
+                  <li>convidá-lo a participar de nossas pesquisas;</li>
+                  <li>monitorar nosso atendimento e nossas interações com você;</li>
+                  <li>receber comunicação de produtos e serviços das empresas do grupo New Gep.</li>
+                </ul>
+              </p>
+              <p className="mt-2">
+                <strong>3. FUNDAMENTOS PARA A COLETA E AGENTES DE TRATAMENTO</strong>
+                <br />
+                A New Gep coleta seus dados pessoais para o exercício do recrutamento e seleção na plataforma Jobs baseada no legítimo interesse. Sendo assim, atua como controladora desses dados da plataforma. Além disso, a New Gep também atua como controladora dos dados do PROFILER que tem sua coleta fundamentada no consentimento. Por fim, os softwares que são para automação interna do RH e departamento pessoal das empresas, são baseados no cumprimento do contrato de trabalho e a New Gep atua como operadora desses dados, fornecendo a segurança e tecnologia para que a empresa insira os dados de seus colaboradores.
+              </p>
+              <p className="mt-2">
+                <strong>4. TRATAMENTO DE DADOS DE CRIANÇAS E ADOLESCENTES</strong>
+                <br />
+                A New Gp não coleta dados pessoais de crianças e adolescentes em seus softwares. Ademais, caso tal situação venha acontecer, será utilizada a base legal do consentimento específico e em destaque, dado por ao menos um dos pais ou responsáveis conforme determina legislação brasileira vigente.
+              </p>
+              <p className="mt-2">
+                <strong>5. SEUS DIREITOS</strong>
+                <br />
+                Você, enquanto titular de Dados Pessoais, possui os seguintes direitos relativos às suas informações pessoais:
+                <ul className="list-disc list-inside">
+                  <li>acessar, revisar, saber se realizamos algum tratamento com seus Dados Pessoais e requisitar uma cópia eletrônica da informação que temos sobre você; corrigir ou solicitar a correção de Dados Pessoais incompletos, inexatos ou desatualizados;</li>
+                  <li>solicitar a anonimização, bloqueio ou eliminação de Dados Pessoais desnecessários e excessivos;</li>
+                  <li>solicitar a portabilidade dos Dados Pessoais a outro fornecedor de produtos ou serviços similares;</li>
+                  <li>solicitar a eliminação dos Dados Pessoais coletados e utilizados com base no seu consentimento;</li>
+                  <li>obter informações sobre as entidades públicas ou privadas com as quais compartilhamos os seus Dados Pessoais;</li>
+                  <li>quando a atividade de tratamento necessitar do seu consentimento, você pode se negar a consentir. Nesse caso, lhe informaremos sobre as consequências da não realização de tal atividade;</li>
+                  <li>quando a atividade de tratamento necessitar do seu consentimento, a qualquer momento você poderá revogá-lo.</li>
+                </ul>
+                Acrescentamos ainda que quando disponíveis, nossos sites, aplicativos e serviços online podem ter uma função dedicada onde será possível você revisar e editar os seus Dados Pessoais. Ressaltamos que a New Gep solicita a validação de sua identidade usando, por exemplo, um sistema de login com senha de acesso ou recurso similar, antes de permitir o acesso ou a modificação de seus Dados Pessoais, dessa forma garantindo que não exista acesso não autorizado à sua conta e dados pessoais associados. A New Gep faz o máximo possível para poder atender todas as questões que você possa ter sobre a forma a qual processamos seus Dados Pessoais. Contudo, se você tiver preocupações não resolvidas, você tem o direito de reclamar às autoridades de proteção de dados competentes.
+              </p>
+              <p className="mt-2">
+                <strong>6. COMPARTILHAMENTO COM TERCEIROS</strong>
+                <br />
+                A New Gep poderá realizar o compartilhamento dos seus dados com terceiros nas seguintes hipóteses:
+                <ul className="list-disc list-inside">
+                  <li>quando os dados forem coletados pela plataforma Job para cadastro em vagas oferecidas pelos nossos clientes. Diante disso, os dados serão compartilhados com a empresa que originou a vaga em questão;</li>
+                  <li>quando os dados forem coletados através de uma ação de co-marketing. Nesse caso, no próprio conteúdo será descrito e informado que é uma parceria da New Gep com uma empresa específica;</li>
+                  <li>quando a coleta dos seus dados não se enquadrar nesses casos descritos acima, eles não serão compartilhados com terceiros. Importante destacar que a New Gep não compartilha com terceiros os dados que são gerados no Profiler e os inseridos no software Gestão.</li>
+                </ul>
+              </p>
+              <p className="mt-2">
+                <strong>7. POLÍTICA DE COOKIES</strong>
+                <br />
+                Utilizamos cookies e web beacons para coletar informações de navegação. Os dados de navegação como IP, ISP, Browser, e outras informações são coletados apenas com a finalidade estatística de melhorar a usabilidade e relevância de nosso site para você. A coleta desses dados é feita pelo Analytics. Porém, você pode navegar anonimamente usando este recurso em seu browser. Usamos cookies para aprender como você interage com o nosso conteúdo e para melhorar sua experiência ao visitar o nosso website. Por exemplo, alguns cookies lembram o seu idioma ou preferências para que você não tenha que efetuar estas escolhas repetidamente sempre que visitar um dos nossos websites. Além disso, os cookies permitem que ofereçamos um conteúdo específico, tais como vídeos no(s) nosso(s) website(s). Podemos empregar o que aprendemos sobre o seu comportamento no(s) nosso(s) website(s) para oferecer anúncios direcionados em website(s) de terceiros em um esforço para apresentar novamente nossos produtos e serviços para você.
+              </p>
+              <p className="mt-2">
+                <strong>8. SEGURANÇA</strong>
+                <br />
+                Desde o momento da inserção dos dados no sistema, até a sua finalidade, estes são armazenados em bancos de dados seguros, com acesso restrito apenas a funcionários com autorização para viabilizar as atividades com os referidos dados. Suas informações são armazenadas na nuvem, na Amazon Web Services, certificada com o certificado Privacy Shield. Cumpre mencionar que os dados utilizados na plataforma Jobs são monitorados e caso o usuário não realize nenhuma ação dentro das nossas plataformas por muito tempo, nós entraremos em contato para saber se ainda possui interesse em manter seus dados conosco, sendo assim, de acordo com o legítimo interesse. Nesse cenário, atuamos no sentido de implementar medidas de segurança que protejam nossos sistemas e bases de dados. Dentre as medidas de segurança que adotamos, estão a utilização de criptografia dos dados, o controle de acesso de informações, antivírus, a utilização de firewalls e a implementação de política interna de segurança da informação, arquitetura da solução de software com prevenção a invasão, utilização de HTTPS. No entanto, apesar de nossos esforços, considerando a natureza e arquitetura da internet, o que inclui elementos que não estão sob nosso controle, é impossível garantir que agentes mal-intencionados não conseguirão ter acesso ou fazer uso indevido de dados pessoais, pois se trata de um risco inerente à utilização de sistemas informatizados.
+              </p>
+              <p className="mt-2">
+                <strong>9. ATUALIZAÇÃO DA POLÍTICA</strong>
+                <br />
+                A equipe da New Gep reserva-se no direito de alterar esta política sempre que necessário. Desse modo, recomendamos que a consulte e com regularidade para estar sempre atualizado. Qualquer dúvida, você poderá falar diretamente com a New Gep Technology ltda. (CNPJ 51.479.893/0001-30) acesse a Central de ajuda New Gep para suporte técnico.
+              </p>
+              <p className="mt-2">
+                <strong>10. ENCARREGADO DOS DADOS</strong>
+                <br />
+                A New Gep é responsável ANPD (Autoridade Nacional de Proteção de Dados) e ao titular dos dados com transparência e responsabilidade. a New Gep, zela pelos seus dados e você poderá entrar em contato pelo e-mail privacidade@newgep.com.br.
+              </p>
+            </div>
           </div>
         </div>
       )}
