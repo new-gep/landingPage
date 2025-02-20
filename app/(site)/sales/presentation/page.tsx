@@ -729,7 +729,7 @@ export default function Presentation() {
               New Gep
             </h1>
             <p className="text-light px-5 text-center lg:text-start">
-              Com o propósito de solucionar as dores do Recurso Humanos.
+              Com o propósito de solucionar as dores da Gestão de Pessoas.
             </p>
           </div>
 
