@@ -23,7 +23,7 @@ const menuData: Menu[] = [
     id: 3,
     title: "Planos",
     newTab: false,
-    path: "/#price",
+    path: "/sales/presentation",
   },
   {
     id: 2.1,

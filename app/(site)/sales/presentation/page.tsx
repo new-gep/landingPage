@@ -21,6 +21,7 @@ import facebook from "../icon/facebook.png";
 import instagram from "../icon/instagram.png";
 import linkedin from "../icon/linkedin.png";
 import whatsapp from "../icon/whatsapp.png";
+import Link from "next/link";
 
 // Defina o tipo correto para os valores do formulário
 type FormValues = {
@@ -230,9 +231,11 @@ export default function Presentation() {
         <div className="h-full bg-[#f0eaf1] lg:h-5/6">
           {/* Header */}
           <div className="absolute flex h-15 w-full items-center justify-between rounded-b-3xl bg-black lg:relative lg:h-20 ">
-            <div className="px-5">
-              <h1 className="font-bold text-primary lg:text-2xl ">New Gep</h1>
-            </div>
+            <Link href="/">
+              <div className="px-5">
+                <h1 className="font-bold text-primary lg:text-2xl ">New Gep</h1>
+              </div>
+            </Link>
 
             <Image
               src="/images/logo/logo-dark.svg"
