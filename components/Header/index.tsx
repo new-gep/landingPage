@@ -164,7 +164,7 @@ const Header = () => {
              <Link
               href="https://www.gepdash.com.br/"
               target="_blank"
-              className="flex items-center justify-center rounded-full text-black font-bold bg-white px-7.5 py-2.5 text-regular  duration-300 ease-in-out hover:bg-primary"
+              className="flex items-center justify-center rounded-full text-white hover:text-black font-bold px-7.5 py-2.5 text-regular  duration-300 ease-in-out hover:bg-primary"
             >
               Dashboard 🔥
             </Link> 
