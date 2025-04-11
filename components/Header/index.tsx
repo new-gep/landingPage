@@ -161,12 +161,13 @@ const Header = () => {
               GitHub Repo 🌟
             </Link> */}
 
-            {/* <Link
-              href="https://nextjstemplates.com/templates/solid"
-              className="flex items-center justify-center rounded-full bg-primary px-7.5 py-2.5 text-regular text-white duration-300 ease-in-out hover:bg-primaryho"
+             <Link
+              href="https://www.gepdash.com.br/"
+              target="_blank"
+              className="flex items-center justify-center rounded-full text-black font-bold bg-white px-7.5 py-2.5 text-regular  duration-300 ease-in-out hover:bg-primary"
             >
-              Get Pro 🔥
-            </Link> */}
+              Dashboard 🔥
+            </Link> 
           </div>
         </div>
       </div>
